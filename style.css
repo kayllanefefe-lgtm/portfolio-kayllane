@@ -1,0 +1,71 @@
+/* Reset básico */
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #38bdf8;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: white;
+}
+
+/* Tema escuro */
+.dark {
+    background-color: #111827;
+    color: white;
+}
+
+.dark section {
+    background-color: #1f2937;
+    color: white;
+}
+
+.dark .card,
+.dark .projeto {
+    background-color: #374151;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        margin: 20px;
+    }
+}
